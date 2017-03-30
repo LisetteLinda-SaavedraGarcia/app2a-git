@@ -1,0 +1,338 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.icons-1.4.5.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/te4.jpg','imagenes/te3.jpg','imagenes/te5.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonia celular</h1>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que es un telefono celular?</h2>
+<p>Dispositivo inalámbrico electrónico que permite tener acceso ...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonia celular</h2>
+<p>En 1947, AT&amp;T ideó un novedoso sistema, basado en muchos transmisores pequeños y ...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificacion de la telefonia celular</h2>
+<p> Se hacía referencia a tres rangos de acuerdo a la jerarquía que los medios daban a determinado celular por el...</p>
+  </a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que manejan la telefonia celular en Mexico</h2>
+<p> Es una compañía de teléfono que proporciona servicios para los usuarios de teléfonos móviles...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Telefonos celulares del futuro</h2>
+<p>Atrás quedaron los tiempos en donde el teléfono celular servía únicamente para hacer llamadas. Hoy se llaman...</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed"> 
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4> Aplicacion Dos </h4>
+<h4> Lisette Linda Saavedra Garcia </h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿QUE ES UN TELEFONO CELULAR?</h1></div>
+<div data-role="content" align="left">
+<div>
+  <p>Un <strong>teléfono celular</strong> es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</p>
+  <p>&nbsp;</p>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Télefonos celulares</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cellphone','','imagenes/te3.jpg',1)"><img src="imagenes/te1.jpg" alt="cellphone" width="411" height="218" id="cellphone"></a> 
+</div>
+</div>
+</div>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Télefonos celulares</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('phone','','imagenes/te5.jpg',1)"><img src="imagenes/te2.jpg" alt="phone" width="376" height="203" id="phone"></a> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Dos SGLL </h4>
+</div>
+</div>
+ 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>HISTORIA DE LA TELEFONIA CELULAR</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>La telefonía móvil o celular se conoce desde mediados del siglo XX, aunque no fue hasta los años setenta que poco a poco comenzó a extenderse, primeramente a precios muy altos y con equipos rudimentarios.</p>
+  <p>En 1947, AT&amp;T ideó un novedoso sistema, basado en muchos transmisores pequeños y formar con ellos una red, en lugar de un potente transmisor ubicado en una altura. Para la consecución de este objetivo la AT&amp;T solicitó a la Comisión Federal de Comunicaciones (FCC), un permiso para desarrollar el sistema de telefonía móvil, esta solicitud fue denegada.</p>
+  <p>En 1973 la FCC, estaba a punto de otorgarle a AT&amp;T el monopolio del sistema celular. Motorola ve que ella puede entrar en este mercado, ya que conocía el negocio de las comunicaciones personales y convoca a sus trabajadores a un concurso para que en seis semanas presenten un prototipo de teléfono portátil. El 3 de abril de 1973, Marty Cooper vicepresidente de Investigación y Desarrollo de Motorola en ese entonces, hace una llamada telefónica a Joel Engel, ingeniero jefe de AT&amp;T y propulsor de la telefonía celular, utilizando el prototipo desarrollado por su compañía, certificándose de esta manera el nacimiento del teléfono celular.</p>
+  <p>El primer prototipo de teléfono móvil comercializado a gran escala fue el diseñado por el ingeniero Rudy, de la compañía Motorola, en 1983. Este teléfono pesaba 0,74 kg, y tenía un valor de 4000 dólares.</p>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Primer Prototipo</h1>
+<div>
+ <img src="imagenes/historia1.jpg" width="22%" height="35%"> 
+</div>
+</div>
+   </div>
+   <p>A pesar de los avances de las compañías estadounidenses, la burocracia del Gobierno de Estados Unidos permitió a Japón, basado en la tecnología estadounidense, inaugurar en 1979 su servicio celular convirtiéndose en el primer país en usarlo. A fines de ese año, el 5 % de los japoneses tenían teléfonos celulares.</p>
+  <p>En marzo del 1981 el presidente de Motorola comienza hacer gestiones con las más altas esferas del Gobierno de los Estados Unidos, hasta presentarle el prototipo a Ronald Reagan entonces presidente del país, este ve las ventajas del sistema y presiona a la FCC para autorización del servicio. Luego de dos meses de esta entrevista, terminan 8 años de burocracia, dando la Comisión Federal de Comunicaciones luz verde al proyecto. Quedando AT&amp;T con el servicio y Motorola con los equipos.</p>
+  <p>Desde entonces la constante investigación en este campo ha propiciado el desarrollo de baterias más pequeñas y de mayor duración, pantallas más nítidas y de colores, la incorporación de software más amigable y multiplicidad de formatos de teléfonos y de funciones agregadas a este, lo cual ha hecho que muchos crean que se trata del dispositivo del siglo XXI</p>
+  <p>Un teléfono móvil de última generación permite no solo realizar llamadas, sino reproducir música y videos, tomar fotos y pequeñas películas, transmitir lo grabado, así como consultar internet, enviar y recibir correos electronicos, mensajes de texto y gráficos, contienen prestaciones como agenda personal y calculadora, juegos electrónicos e incluso ya se puede ver por ellos television digital.   </p>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>AT&amp;T</h1>
+<div>
+ <img src="imagenes/atta.png" width="35%" height="35%"> 
+</div>
+</div>
+</div>
+  
+  </div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos SGLL </h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CLASIFICACION DE LA TELEFONIA CELULAR</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>Se hacía referencia a tres rangos de acuerdo a la jerarquía que los medios daban a determinado celular por el potencial de sus especificaciones o características.
+     </h2>  
+  <h2>Gama baja
+   </h2>
+   <p>En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones</p>
+ <ul>
+   <li>Suelen ser pequeños</li>
+   <li>Tienen funciones básicas o las funciones que traen ya no están a la altura de un SmartPhone (ej:nokia)</li>
+   <li>Precios muy economicos</li>
+   <li>Características muy limitadas (cámara VGA, memoria interna, sin flash, se ponen muy lentos con el tiempo)</li>
+   <li>No reciben soporte ni actualizaciones.</li>
+   </ul>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Télefono de gama baja</h1>
+<div>
+ <img src="imagenes/gam3.jpg" width="21%" height="27%"> 
+</div>
+</div>
+   </div>
+   <h2>Gama media</h2>
+ <p>Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.</p>
+ <ul>
+   <li>Suelen ser muy equilibrados en sus características</li>
+   <li>Generalmente no superan los 500 dólares en precio (como mucho).</li>
+   <li>Tienen algunas funciones de la gama alta del momento.</li>
+   <li>Los materiales ya son de calidad aceptable.</li>
+   <li>Pantallas que no superan las 4.5 pulgadas (en promedio).</li>
+   <li>Cámaras de 3 a 5 Mpx</li>
+   <li>Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM.</li>
+   </ul>
+    <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Télefono de gama media</h1>
+<div>
+ <img src="imagenes/gam2.jpg" width="25%" height="27%"> 
+</div>
+</div>
+    </div>
+    <h2>Gama alta</h2>
+ <p>Aquí se ubican los mejores, se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.</p>
+ <p>Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida.</p>
+ <p>También pueden incluirse otros terminales no tan nuevos pero que siguen siendo una excelente opción en gama alta aunque no cumplan con el requisito del precio.</p>
+ <ul>
+   <li>Pantallas de 4 pulgadas en adelante</li>
+   <li>Memoria interna desde 16GB</li>
+   <li>Soporte de actualizaciones (las recibe antes pero depende de la marca)</li>
+   <li>Diseñados para redes 4G</li>
+   <li>Muchos núcleos, procesadores y RAM para que sean muy rápidos</li>
+   <li>Cámaras de calidad desde 8 Mpx</li>
+   <li>Destacan por ser relativamente delgados</li>
+   <li>Eficiencia energética</li>
+   <li>Se conectan con la TV</li>
+   <li>Desde 800 dólares en adelante</li>
+   <li>Se conectan con Wearables (Galaxy Gear,iWatch, etc)</li>
+   <li>Mide tu ritmo cardíaco, predice el futuro, te ayuda a bajar de peso, puedes mirar las estrellas, lee tu mente (es broma) y todo lo que se te ocurra.</li>
+   </ul>
+    <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Télefonos de gama alta</h1>
+<div>
+ <img src="imagenes/gam1.jpeg" width="22%" height="35%"> 
+</div>
+</div>
+</div>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+</div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos SGLL </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>COMPAÑIA QUE MANEJAN LA TELEFONIA CELULAR EN MEXICO</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>Es una compañia de telefono que proporciona servicios para los usuarios de teléfonos moviles. El operador le da una tarjeta SIM para el cliente, que se inserta en el teléfono móvil para acceder al servicio. </p>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Compañias télefonicas</h1>
+<div>
+ <img src="imagenes/telcel.png" width="43%" height="32%"> 
+</div>
+</div>
+    </div>
+  <p>&nbsp;</p>
+  <p>Dado  que las comunicaciones son necesarias para el avance de la economía y que estas no han cesado en su desarrollo, las empresas de telefonía han evolucionado para atender la creciente demanda de comunicación y las constantes actualizaciones de la tecnología. Se pueden congregar en dos grupos de telefonía: la fija y móvil. En ambas empresas telefónicas señales acústicas son transportadas en tiempo real, es decir, en vivo.</p>
+  <p>TELCEL</p>
+  <p>MOVISTAR</p>
+  <p>IUSACELL</p>
+  <p>NEXTEL</p>
+  <p>AXTEL</p>
+  <p>UNEFON</p>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Compañias télefonicas</h1>
+<div>
+ <img src="imagenes/compa1.png" width="74%" height="46%"> 
+ <img src="imagenes/compa2.png" width="17%" height="33%">
+</div>
+</div>
+    </div>
+  <p>&nbsp;</p>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos SGLL </h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TELEFONOS CELULARES DEL FUTURO</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>Atrás quedaron los tiempos en donde el teléfono celular servía únicamente para hacer llamadas. Hoy se llaman &ldquo;teléfonos inteligentes&rdquo;, y <strong>los <em>smartphones </em>son computadoras completas que caben en el bolsillo</strong> y que permiten conectarse a Internet de forma inalámbrica, acceder a redes sociales, crear y editar documentos, hacer pagos y desde luego, hablar por teléfono.
+  </p>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Smartphones</h1>
+<div>
+ <img src="imagenes/nok.jpg" width="24%" height="17%"> 
+</div>
+</div>
+  </div>
+  <p><strong>NOKIA MORPH  4NOKIA MORPH 4</strong> <br>
+Este celular es como salido de una película futurista. Lo  más sorprendente es su increíble capacidad de moldearse en diferentes formas.  Entre otro de sus atractivos destaca además su gran panel para ver videos.<br>
+Otra de las novedades de este súper teléfono es que posee  una superficie &ldquo;auto-lavable&rdquo; y chips electrónicos totalmente transparentes al  ojo humano<br>
+<strong>BLACK BOX</strong><br>
+Modelo que pertenece a BenQ-Siemens y que ha sido catalogado  de impresionante, porque incorpora tecnología touch, como medio de navegación,  tanto en la panatalla como en todo el cuerpo del dispositivo. <br>
+Al parecer la interfaz será bastante sencilla de utilizar.  Pero esta maravilla tardará un poco en ver la luz, ya que aún no tiene fecha de  lanzamiento.</p>
+  <p><strong>NOKIA 888</strong><br>
+    Está diseñado para  otorgar la máxima libertad y diversión, ya que&nbsp;<strong>puede cambiar de forma según  las necesidades del usuario</strong>,&nbsp;gracias a su batería líquida. Puedes llevarlo como pulsera,  enrollado en el bolsillo o como prefieras. Cuando recibe una llamada adopta la  forma de los teléfonos tradicionales.<br>
+  &nbsp;<br>
+   
+    Este prototipo permitiría enviar formas del teléfono a otros usuarios, por  ejemplo si quieres mandarle un corazón a tu novia, sólo haz que tu teléfono se  convierta en un corazón. De momento no saldrá al mercado.</p>
+  <p><strong>NEC TAG</strong></p>
+  <p>Un móvil maleable  presentado por NEC Design. Al igual que los modelos antes mencionados  éste&nbsp;adopta&nbsp;diferentes formas, según el uso que le quieras dar.<br>
+  &nbsp;<br>
+    Está hecho de un material con memoria, que&nbsp;posee varios sensores de presión&nbsp;para que el teléfono cambie y adopte  las distintas posiciones.<br>
+  &nbsp;<br>
+    Este modelo tampoco ha salido al mercado y sus creadores no se han pronunciado  sobre la posibilidad de llevarlo a las ventas masivas.<br>
+  &nbsp;</p>
+ 
+  <p><strong>PENPHONE</strong><br>
+    La novedad de este  teléfono móvil es que es una lapicera y un celular al mismo tiempo. Además  incluye un slot para tarjetas microSD y un scroll whell para navegar las  funciones en el display.<br>
+  &nbsp;<br>
+    El diseño pertenece a la compañía Via BoyGenius, que se caracteriza por sus  creaciones bizarras.</p>
+    <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Télefonos celulares del futuro</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('futuro','','imagenes/te4.jpg',1)"><img src="imagenes/futuro2.jpg" alt="futuro" width="541" height="362" id="futuro"></a>
+</div>
+</div>
+</div>
+  <p>&nbsp;</p>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos SGLL </h4>
+</div>
+</div>
+
+
+
+</body>
+</html>
